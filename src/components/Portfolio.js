@@ -5,77 +5,89 @@ import { StaticImage } from "gatsby-plugin-image";
 export default function Portfolio() {
   return (
     <Gallery>
-      <div className="gallery">
-        <StaticImage
-          src="../images/gallery/1.jpg"
-          alt="Spain"
-          layout="constrained"
-          placeholder="tracedSVG"
-          as="section"
-          class="gallery__item gallery__item--1"
-        />
-        <StaticImage
-          src="../images/gallery/2.jpg"
-          alt="Spain"
-          layout="constrained"
-          placeholder="tracedSVG"
-          as="section"
-          class="gallery__item gallery__item--2"
-        />
-        <StaticImage
-          src="../images/gallery/3.jpg"
-          alt="Spain"
-          layout="constrained"
-          placeholder="tracedSVG"
-          as="section"
-          class="gallery__item gallery__item--3"
-        />
-        <StaticImage
-          src="../images/gallery/4.jpg"
-          alt="Spain"
-          layout="constrained"
-          placeholder="tracedSVG"
-          as="section"
-          class="gallery__item gallery__item--4"
-        />
-        <StaticImage
-          src="../images/gallery/5.jpg"
-          alt="Spain"
-          layout="constrained"
-          placeholder="tracedSVG"
-          as="section"
-          class="gallery__item gallery__item--5"
-        />
-        <StaticImage
-          src="../images/gallery/6.jpg"
-          alt="Spain"
-          layout="constrained"
-          placeholder="tracedSVG"
-          as="section"
-          class="gallery__item gallery__item--6"
-        />
-        <StaticImage
-          src="../images/gallery/7.jpg"
-          alt="Spain"
-          layout="constrained"
-          placeholder="tracedSVG"
-          as="section"
-          class="gallery__item gallery__item--7"
-        />
-        <StaticImage
-          src="../images/gallery/8.jpg"
-          alt="Spain"
-          layout="constrained"
-          placeholder="tracedSVG"
-          as="section"
-          class="gallery__item gallery__item--8"
-        />
+      <div className="container">
+        <p>Portfolio</p>
+        <h2>Recent work</h2>
+
+        <div className="gallery">
+          <StaticImage
+            src="../images/gallery/1.jpg"
+            alt="Spain"
+            layout="constrained"
+            placeholder="tracedSVG"
+            as="section"
+            class="gallery__item gallery__item--1"
+          />
+          <StaticImage
+            src="../images/gallery/2.jpg"
+            alt="Spain"
+            layout="constrained"
+            placeholder="tracedSVG"
+            as="section"
+            class="gallery__item gallery__item--2"
+          />
+          <StaticImage
+            src="../images/gallery/3.jpg"
+            alt="Spain"
+            layout="constrained"
+            placeholder="tracedSVG"
+            as="section"
+            class="gallery__item gallery__item--3"
+          />
+          <StaticImage
+            src="../images/gallery/4.jpg"
+            alt="Spain"
+            layout="constrained"
+            placeholder="tracedSVG"
+            as="section"
+            class="gallery__item gallery__item--4"
+          />
+          <StaticImage
+            src="../images/gallery/5.jpg"
+            alt="Spain"
+            layout="constrained"
+            placeholder="tracedSVG"
+            as="section"
+            class="gallery__item gallery__item--5"
+          />
+          <StaticImage
+            src="../images/gallery/6.jpg"
+            alt="Spain"
+            layout="constrained"
+            placeholder="tracedSVG"
+            as="section"
+            class="gallery__item gallery__item--6"
+          />
+          <StaticImage
+            src="../images/gallery/7.jpg"
+            alt="Spain"
+            layout="constrained"
+            placeholder="tracedSVG"
+            as="section"
+            class="gallery__item gallery__item--7"
+          />
+          <StaticImage
+            src="../images/gallery/8.jpg"
+            alt="Spain"
+            layout="constrained"
+            placeholder="tracedSVG"
+            as="section"
+            class="gallery__item gallery__item--8"
+          />
+        </div>
       </div>
     </Gallery>
   );
 }
 
 const Gallery = styled.figure`
+  .container {
+    width: 1140px;
+    margin: 0 auto;
+    /* text-align: center; */
+    margin-top: 2rem;
+  }
+
   .gallery {
     display: grid;
     grid-template-columns: repeat(3, 30vh);

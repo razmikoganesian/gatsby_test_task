@@ -13,7 +13,7 @@ export default function Hero() {
             <h3 className="dark-text">That Help Your</h3>
             <h3 className="light-text">Business grow</h3>
           </div>
-          <p>
+          <p className="sometext">
             I help you increase conversion and performance in every possible way
           </p>
           <div className="buttons">
@@ -40,15 +40,19 @@ const Container = styled.section`
   .container {
     display: grid;
     grid-template-rows: 60vh;
-    grid-template-columns: repeat(2, 40rem);
+    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     margin: 1rem auto;
+
+    width: 1140px;
+    margin: 0 auto;
   }
 
   .buttons {
     display: flex;
     flex-direction: row;
     gap: 1rem;
+    margin-top: 2rem;
   }
 
   .btn {
@@ -88,5 +92,9 @@ const Container = styled.section`
     border-radius: 1rem;
     height: 400px;
     width: 400px;
+  }
+
+  .sometext {
+    margin-top: 2rem;
   }
 `;
