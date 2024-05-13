@@ -94,19 +94,19 @@ const Process = styled.figure`
   }
 
   .phase-1 {
-    color: orange;
+    color: #2b8a3e;
   }
 
   .phase-2 {
-    color: blue;
+    color: #1864ab;
   }
 
   .phase-3 {
-    color: yellow;
+    color: #c92a2a;
   }
 
   .phase-4 {
-    color: purple;
+    color: #862e9c;
   }
 
   .headline {

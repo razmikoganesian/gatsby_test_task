@@ -13,8 +13,8 @@ export default function Testimonial() {
         <div className="items">
           <figure className="item">
             <StaticImage
-              src="../images/gallery/1.jpg"
-              alt="Spain"
+              src="../images/testimonial/person1.jpg"
+              alt="person1"
               layout="constrained"
               placeholder="tracedSVG"
               as="section"
@@ -30,14 +30,14 @@ export default function Testimonial() {
             />
             <div className="list">
               <p className="text">Razmik was quite good</p>
-              <p className="person">Front-End developer</p>
+              <p className="person">Markus Hovhannisyan</p>
               <p className="connect">aaa@gmail.com</p>
             </div>
           </figure>
           <figure className="item">
             <StaticImage
-              src="../images/gallery/1.jpg"
-              alt="Spain"
+              src="../images/testimonial/person2.jpg"
+              alt="Person2"
               layout="constrained"
               placeholder="tracedSVG"
               as="section"
@@ -53,14 +53,14 @@ export default function Testimonial() {
             />
             <div className="list">
               <p className="text">He is a fan of Spain</p>
-              <p className="person">Front-End developer</p>
+              <p className="person">Armen Ashakyan</p>
               <p className="connect">aaa@gmail.com</p>
             </div>
           </figure>
           <figure className="item">
             <StaticImage
-              src="../images/gallery/1.jpg"
-              alt="Spain"
+              src="../images/testimonial/person3.jpg"
+              alt="Person3"
               layout="constrained"
               placeholder="tracedSVG"
               as="section"
@@ -76,13 +76,13 @@ export default function Testimonial() {
             />
             <div className="list">
               <p className="text">He is good automation engineer</p>
-              <p className="person">Front-End developer</p>
+              <p className="person">Vazgen Manukyan</p>
               <p className="connect">aaa@gmail.com</p>
             </div>
           </figure>
         </div>
         <div className="rating">
-          <p>Five stars</p>
+          <p className="person">Five stars</p>
           <div className="overview__stars">
             <StaticImage
               src="../images/star.svg"
@@ -125,8 +125,18 @@ export default function Testimonial() {
               class="img-star"
             />
           </div>
-          <div>Based on 8 review</div>
-          <div>Icon + Trust PIlot</div>
+          <div className="text">Based on 8 review</div>
+          <div className="aaa">
+            <StaticImage
+              src="../images/star.svg"
+              alt="star"
+              layout="constrained"
+              placeholder="tracedSVG"
+              as="section"
+              class="img-star"
+            />
+            <div>Trustpilot</div>
+          </div>
         </div>
       </div>
     </AAA>
@@ -160,10 +170,10 @@ const AAA = styled.div`
 
   .img {
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     position: absolute;
-    transform: translate(100%, -150%);
+    transform: translate(75%, -150%);
   }
 
   .img-quote {
@@ -171,7 +181,7 @@ const AAA = styled.div`
     width: 15px;
     height: 15px;
     position: absolute;
-    transform: translate(450%, -100%);
+    transform: translate(500%, -100%);
     margin-bottom: 1rem;
   }
 
@@ -188,6 +198,7 @@ const AAA = styled.div`
     justify-content: center;
     display: flex;
     align-items: center;
+    margin-top: 1rem;
   }
 
   .img-star {
@@ -200,7 +211,7 @@ const AAA = styled.div`
     font-weight: bold;
     font-size: 3rem;
     color: #0a2844;
-    margin-bottom: 3rem;
+    margin-bottom: 6rem;
   }
 
   .up {
@@ -230,5 +241,13 @@ const AAA = styled.div`
 
   .list {
     text-align: center;
+  }
+
+  .aaa {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
   }
 `;
