@@ -1,10 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import { StaticImage } from "gatsby-plugin-image";
+import scrollTo from "gatsby-plugin-smoothscroll";
 
 export default function Footer() {
   return (
-    <AAA>
+    <AAA id="connect">
       <div className="container">
         <div className="text">
           <p>Contact me</p>
@@ -32,10 +33,18 @@ export default function Footer() {
           />
 
           <div className="nav-links">
-            <div className="item">About</div>
-            <div className="item">Portfolio</div>
-            <div className="item">Testimonials</div>
-            <div className="item">Blog</div>
+            <button onClick={() => scrollTo("#about")} className="item">
+              About
+            </button>
+            <button onClick={() => scrollTo("#portfolio")} className="item">
+              Portfolio
+            </button>
+            <button onClick={() => scrollTo("#testimonials")} className="item">
+              Testimonials
+            </button>
+            <button onClick={() => scrollTo("#blog")} className="item">
+              Blog
+            </button>
           </div>
         </div>
       </div>
@@ -90,6 +99,9 @@ const AAA = styled.figure`
     font-weight: 700;
     color: #0a2844;
     font-size: 1.2rem;
+    border: none;
+    background: none;
+    cursor: pointer;
   }
 
   .legal {

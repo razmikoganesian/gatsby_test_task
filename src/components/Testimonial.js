@@ -5,7 +5,7 @@ import styled from "styled-components";
 export default function Testimonial() {
   return (
     <AAA>
-      <div className="container">
+      <div className="container" id="testimonials">
         <div className="headline">
           <p className="text up">Reviews</p>
           <h1 className="header">Customer testimonials</h1>

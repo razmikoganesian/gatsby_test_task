@@ -5,7 +5,7 @@ import { StaticImage } from "gatsby-plugin-image";
 export default function Portfolio() {
   return (
     <Gallery>
-      <div className="container">
+      <div className="container" id="portfolio">
         <p className="portfolio">Portfolio</p>
         <h2 className="recent-work">Recent work</h2>
 
