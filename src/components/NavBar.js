@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { StaticImage } from "gatsby-plugin-image";
-import { Link } from "gatsby";
+import scrollTo from "gatsby-plugin-smoothscroll";
 
 export default function Footer() {
   return (
@@ -18,11 +18,24 @@ export default function Footer() {
           />
 
           <div className="nav-links">
-            <div className="item">About</div>
-            <div className="item">Portfolio</div>
-            <div className="item">Testimonials</div>
-            <div className="item">Blog</div>
-            <div className="item connect-item">Connect</div>
+            <button onClick={() => scrollTo("#about")} className="item">
+              About
+            </button>
+            <button onClick={() => scrollTo("#portfolio")} className="item">
+              Portfolio
+            </button>
+            <button onClick={() => scrollTo("#testimonials")} className="item">
+              Testimonials
+            </button>
+            <button onClick={() => scrollTo("#blog")} className="item">
+              Blog
+            </button>
+            <button
+              onClick={() => scrollTo("#connect")}
+              className="item connect-item"
+            >
+              Connect
+            </button>
           </div>
         </div>
       </div>
@@ -62,6 +75,9 @@ const AAA = styled.figure`
     font-weight: 700;
     color: #0a2844;
     font-size: 1.2rem;
+    border: none;
+    background: none;
+    cursor: pointer;
   }
 
   .connect-item {

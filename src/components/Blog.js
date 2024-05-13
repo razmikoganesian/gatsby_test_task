@@ -4,7 +4,7 @@ import { StaticImage } from "gatsby-plugin-image";
 
 export default function Blog() {
   return (
-    <AAA>
+    <AAA id="blog">
       <div className="text1">
         <p className="text up">LATEST</p>
         <h2 className="header">FROM THE BLOG</h2>
