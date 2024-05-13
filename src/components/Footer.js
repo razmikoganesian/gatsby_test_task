@@ -87,13 +87,15 @@ const AAA = styled.figure`
   }
 
   .item {
-    font-weight: bold;
+    font-weight: 700;
+    color: #0a2844;
+    font-size: 1.2rem;
   }
 
   .legal {
     font-size: 1.2rem;
     text-align: center;
-    color: #777;
+    color: #495057;
     padding: 2.5rem;
   }
 `;

@@ -6,8 +6,8 @@ export default function Portfolio() {
   return (
     <Gallery>
       <div className="container">
-        <p>Portfolio</p>
-        <h2>Recent work</h2>
+        <p className="portfolio">Portfolio</p>
+        <h2 className="recent-work">Recent work</h2>
 
         <div className="gallery">
           <StaticImage
@@ -83,9 +83,21 @@ export default function Portfolio() {
 const Gallery = styled.figure`
   .container {
     width: 1140px;
-    margin: 0 auto;
+    margin: 7rem auto 3rem auto;
     /* text-align: center; */
-    margin-top: 2rem;
+  }
+
+  .portfolio {
+    font-weight: 500;
+    font-size: 1rem;
+    color: #495057;
+    text-transform: uppercase;
+  }
+
+  .recent-work {
+    font-weight: bold;
+    font-size: 3rem;
+    color: #0a2844;
   }
 
   .gallery {

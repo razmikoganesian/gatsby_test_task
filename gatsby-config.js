@@ -20,8 +20,8 @@ module.exports = {
         fonts: {
           google: [
             {
-              family: "Montserrat",
-              variants: ["400"],
+              family: "Lato",
+              variants: ["400", "500", "600", "700"],
             },
             {
               family: "Inconsolata",

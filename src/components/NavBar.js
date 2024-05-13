@@ -59,12 +59,16 @@ const AAA = styled.figure`
   }
 
   .item {
-    font-weight: bold;
+    font-weight: 700;
+    color: #0a2844;
+    font-size: 1.2rem;
   }
 
   .connect-item {
     padding: 0.5rem 2rem;
     border-radius: 0.5rem;
-    background-color: #364fc7;
+    color: #fff;
+
+    background-color: #0a2844;
   }
 `;

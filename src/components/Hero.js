@@ -32,6 +32,7 @@ export default function Hero() {
           />
         </div>
       </div>
+      <div className="underline"></div>
     </Container>
   );
 }
@@ -39,13 +40,11 @@ export default function Hero() {
 const Container = styled.section`
   .container {
     display: grid;
-    grid-template-rows: 60vh;
+    grid-template-rows: auto;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
-    margin: 1rem auto;
-
     width: 1140px;
-    margin: 0 auto;
+    margin: 3rem auto;
   }
 
   .buttons {
@@ -67,7 +66,7 @@ const Container = styled.section`
 
   .btn-left {
     color: #fff;
-    background-color: #101d2c;
+    background-color: #0a2844;
   }
 
   .btn-right {
@@ -76,11 +75,15 @@ const Container = styled.section`
   }
 
   .dark-text {
-    color: #101d2c;
+    color: #0a2844;
+    font-weight: bold;
+    font-size: 3rem;
   }
 
   .light-text {
     color: #228be6;
+    font-weight: bold;
+    font-size: 3rem;
   }
 
   .article {
@@ -96,5 +99,13 @@ const Container = styled.section`
 
   .sometext {
     margin-top: 2rem;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #495057;
+  }
+
+  .underline {
+    margin-top: 8rem;
+    border-bottom: 1px solid #e9ecef;
   }
 `;
