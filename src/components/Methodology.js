@@ -6,7 +6,7 @@ export default function Methodology() {
     <Process>
       <div className="container">
         <div className="left">
-          <p className="text">Methodology</p>
+          <p>Methodology</p>
           <h2 className="header">My Process</h2>
         </div>
         <div className="right">
@@ -60,10 +60,9 @@ const Process = styled.figure`
   .container {
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 35vw auto;
     justify-content: center;
-    width: 1140px;
-    margin: 4rem auto;
+    margin: 3rem auto;
   }
 
   .right {
@@ -76,15 +75,8 @@ const Process = styled.figure`
   .header {
     font-weight: bold;
     font-size: 3rem;
-    color: #0a2844;
+    color: var(--primary);
     margin-bottom: 3rem;
-  }
-
-  .text {
-    font-weight: 500;
-    font-size: 1rem;
-    color: #495057;
-    text-transform: uppercase;
   }
 
   .phase {
@@ -94,31 +86,25 @@ const Process = styled.figure`
   }
 
   .phase-1 {
-    color: #2b8a3e;
+    color: var(--green-dark);
   }
 
   .phase-2 {
-    color: #1864ab;
+    color: var(--purple);
   }
 
   .phase-3 {
-    color: #c92a2a;
+    color: var(--red-dark);
   }
 
   .phase-4 {
-    color: #862e9c;
+    color: var(--blue);
   }
 
   .headline {
     font-weight: bold;
     font-size: 2rem;
-    color: #0a2844;
+    color: var(--primary);
     margin-bottom: 1rem;
-  }
-
-  article {
-    font-weight: 500;
-    font-size: 1rem;
-    color: #495057;
   }
 `;

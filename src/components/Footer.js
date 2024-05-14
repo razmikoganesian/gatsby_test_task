@@ -9,7 +9,7 @@ export default function Footer() {
       <div className="container">
         <div className="text">
           <p>Contact me</p>
-          <h2>Got a project? Let's talk!</h2>
+          <h3>Got a project? Let's talk!</h3>
         </div>
         <div className="main">
           <StaticImage
@@ -55,7 +55,6 @@ export default function Footer() {
 
 const AAA = styled.figure`
   .container {
-    width: 1140px;
     margin: 2rem auto;
     background-color: #d0ebff;
     border-radius: 1rem;
@@ -97,7 +96,7 @@ const AAA = styled.figure`
 
   .item {
     font-weight: 700;
-    color: #0a2844;
+    color: var(--primary);
     font-size: 1.2rem;
     border: none;
     background: none;
@@ -105,9 +104,7 @@ const AAA = styled.figure`
   }
 
   .legal {
-    font-size: 1.2rem;
     text-align: center;
-    color: #495057;
     padding: 2.5rem;
   }
 `;

@@ -15,6 +15,7 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-smoothscroll`,
+    `gatsby-plugin-svgr`,
     {
       resolve: `gatsby-plugin-webfonts`,
       options: {

@@ -1,6 +1,7 @@
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
 import styled from "styled-components";
+import { ReactComponent as Star } from "../images/star.svg";
 
 export default function Testimonial() {
   return (
@@ -29,9 +30,9 @@ export default function Testimonial() {
               class="img-quote"
             />
             <div className="list">
-              <p className="text">Razmik was quite good</p>
+              <p>Razmik was quite good</p>
               <p className="person">Markus Hovhannisyan</p>
-              <p className="connect">aaa@gmail.com</p>
+              <p>aaa@gmail.com</p>
             </div>
           </figure>
           <figure className="item">
@@ -52,9 +53,9 @@ export default function Testimonial() {
               class="img-quote"
             />
             <div className="list">
-              <p className="text">He is a fan of Spain</p>
+              <p>He is a fan of Spain</p>
               <p className="person">Armen Ashakyan</p>
-              <p className="connect">aaa@gmail.com</p>
+              <p>aaa@gmail.com</p>
             </div>
           </figure>
           <figure className="item">
@@ -75,66 +76,27 @@ export default function Testimonial() {
               class="img-quote"
             />
             <div className="list">
-              <p className="text">He is good automation engineer</p>
+              <p>He is good automation engineer</p>
               <p className="person">Vazgen Manukyan</p>
-              <p className="connect">aaa@gmail.com</p>
+              <p>aaa@gmail.com</p>
             </div>
           </figure>
         </div>
         <div className="rating">
           <p className="person">Five stars</p>
           <div className="overview__stars">
-            <StaticImage
-              src="../images/star.svg"
-              alt="star"
-              layout="constrained"
-              placeholder="tracedSVG"
-              as="section"
-              class="img-star"
-            />
-            <StaticImage
-              src="../images/star.svg"
-              alt="star"
-              layout="constrained"
-              placeholder="tracedSVG"
-              as="section"
-              class="img-star"
-            />
-            <StaticImage
-              src="../images/star.svg"
-              alt="star"
-              layout="constrained"
-              placeholder="tracedSVG"
-              as="section"
-              class="img-star"
-            />
-            <StaticImage
-              src="../images/star.svg"
-              alt="star"
-              layout="constrained"
-              placeholder="tracedSVG"
-              as="section"
-              class="img-star"
-            />
-            <StaticImage
-              src="../images/star.svg"
-              alt="star"
-              layout="constrained"
-              placeholder="tracedSVG"
-              as="section"
-              class="img-star"
-            />
+            <Star class="img-star" fill="white" alt="star" />
+            <Star class="img-star" fill="white" alt="star" />
+            <Star class="img-star" fill="white" alt="star" />
+            <Star class="img-star" fill="white" alt="star" />
+            <Star class="img-star" fill="white" alt="star" />
           </div>
           <div className="text">Based on 8 review</div>
           <div className="aaa">
-            <StaticImage
-              src="../images/star.svg"
-              alt="star"
-              layout="constrained"
-              placeholder="tracedSVG"
-              as="section"
-              class="img-star"
-            />
+            <div>
+              <Star class="last-star" fill="orange" alt="star" />
+            </div>
+
             <div>Trustpilot</div>
           </div>
         </div>
@@ -146,7 +108,6 @@ export default function Testimonial() {
 const AAA = styled.div`
   margin-top: 5rem;
   .container {
-    width: 1140px;
     margin: 5rem auto;
     padding: 2rem;
     background-color: #fff0f6;
@@ -204,13 +165,18 @@ const AAA = styled.div`
   .img-star {
     width: 25px;
     height: 25px;
-    fill: #fff;
+    background-color: orange;
+  }
+
+  .last-star {
+    width: 25px;
+    height: 25px;
   }
 
   .header {
     font-weight: bold;
     font-size: 3rem;
-    color: #0a2844;
+    color: var(--primary);
     margin-bottom: 6rem;
   }
 
@@ -218,24 +184,10 @@ const AAA = styled.div`
     text-transform: uppercase;
   }
 
-  .text {
-    font-weight: 500;
-    font-size: 1rem;
-    color: #495057;
-    margin-top: 1rem;
-  }
-
   .person {
     font-weight: 700;
     font-size: 1rem;
-    color: #0a2844;
-    margin-top: 1rem;
-  }
-
-  .connect {
-    font-weight: 500;
-    font-size: 0.8rem;
-    color: #495057;
+    color: var(--primary);
     margin-top: 1rem;
   }
 
