@@ -6,14 +6,14 @@ export default function Hero() {
   return (
     <Container>
       <div className="container">
-        <div className="left">
+        <div>
           <div className="article">
             <h3 className="dark-text">I Build Custom</h3>
             <h3 className="light-text">Website Solutions</h3>
             <h3 className="dark-text">That Help Your</h3>
             <h3 className="light-text">Business grow</h3>
           </div>
-          <p className="sometext">
+          <p className="text">
             I help you increase conversion and performance in every possible way
           </p>
           <div className="buttons">
@@ -21,7 +21,7 @@ export default function Hero() {
             <button class="btn btn-right">Start a project</button>
           </div>
         </div>
-        <div className="right">
+        <div>
           <StaticImage
             src="../images/face.jpg"
             alt="Recipe 1"
@@ -43,8 +43,8 @@ const Container = styled.section`
     grid-template-rows: auto;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
-    width: 1140px;
-    margin: 3rem auto;
+    justify-items: center;
+    margin: 0 auto;
   }
 
   .buttons {
@@ -65,23 +65,23 @@ const Container = styled.section`
   }
 
   .btn-left {
-    color: #fff;
-    background-color: #0a2844;
+    color: var(--white);
+    background-color: var(--primary);
   }
 
   .btn-right {
-    color: #fff;
-    background-color: #228be6;
+    color: var(--white);
+    background-color: var(--secondary);
   }
 
   .dark-text {
-    color: #0a2844;
+    color: var(--primary);
     font-weight: bold;
     font-size: 3rem;
   }
 
   .light-text {
-    color: #228be6;
+    color: var(--secondary);
     font-weight: bold;
     font-size: 3rem;
   }
@@ -97,15 +97,13 @@ const Container = styled.section`
     width: 400px;
   }
 
-  .sometext {
+  .text {
     margin-top: 2rem;
-    font-weight: 500;
-    font-size: 1rem;
-    color: #495057;
   }
 
   .underline {
     margin-top: 8rem;
     border-bottom: 1px solid #e9ecef;
+    margin-bottom: 3rem;
   }
 `;

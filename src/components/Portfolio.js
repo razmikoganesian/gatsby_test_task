@@ -82,27 +82,22 @@ export default function Portfolio() {
 
 const Gallery = styled.figure`
   .container {
-    width: 1140px;
-    margin: 7rem auto 3rem auto;
-    /* text-align: center; */
+    margin: 3rem auto;
   }
 
   .portfolio {
-    font-weight: 500;
-    font-size: 1rem;
-    color: #495057;
     text-transform: uppercase;
   }
 
   .recent-work {
     font-weight: bold;
     font-size: 3rem;
-    color: #0a2844;
+    color: var(--primary);
   }
 
   .gallery {
     display: grid;
-    grid-template-columns: repeat(3, 30vh);
+    grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(3, 20vw);
     grid-gap: 1.5rem;
     padding: 1.5rem;

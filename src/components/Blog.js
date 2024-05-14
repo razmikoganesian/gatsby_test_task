@@ -51,18 +51,16 @@ export default function Blog() {
 
 const AAA = styled.figure`
   .container {
-    width: 1140px;
-    margin: 2rem auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem;
     padding: 2rem;
+    margin: 0 auto;
   }
 
   .item {
     display: grid;
     grid-template-rows: 15rem 10rem;
-    /* grid-row-gap: 1.5rem; */
     border-radius: 1rem;
     border: 1px solid #dee2e6;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -83,7 +81,7 @@ const AAA = styled.figure`
   .header {
     font-weight: bold;
     font-size: 3rem;
-    color: #0a2844;
+    color: var(--primary);
     margin-bottom: 4rem;
   }
 
@@ -92,15 +90,12 @@ const AAA = styled.figure`
   }
 
   .text {
-    font-weight: 500;
-    font-size: 1rem;
-    color: #495057;
     margin: 1rem;
   }
 
   .bold-text {
     font-weight: 700;
-    color: #0c3256;
+    color: var(--primary);
   }
 
   .date {

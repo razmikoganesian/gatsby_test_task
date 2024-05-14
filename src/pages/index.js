@@ -8,6 +8,7 @@ import Methodology from "../components/Methodology";
 import Testimonial from "../components/Testimonial";
 import Blog from "../components/Blog";
 import Footer from "../components/Footer";
+import "../css/main.css";
 
 export default function Home() {
   return (

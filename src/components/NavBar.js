@@ -18,21 +18,33 @@ export default function Footer() {
           />
 
           <div className="nav-links">
-            <button onClick={() => scrollTo("#about")} className="item">
-              About
+            <button
+              onClick={() => scrollTo("#about")}
+              className="link nav__link"
+            >
+              <span>About</span>
             </button>
-            <button onClick={() => scrollTo("#portfolio")} className="item">
-              Portfolio
+            <button
+              onClick={() => scrollTo("#portfolio")}
+              className="link nav__link"
+            >
+              <span>Portfolio</span>
             </button>
-            <button onClick={() => scrollTo("#testimonials")} className="item">
-              Testimonials
+            <button
+              onClick={() => scrollTo("#testimonials")}
+              className="link nav__link"
+            >
+              <span>Testimonials</span>
             </button>
-            <button onClick={() => scrollTo("#blog")} className="item">
-              Blog
+            <button
+              onClick={() => scrollTo("#blog")}
+              className="link nav__link"
+            >
+              <span>Blog</span>
             </button>
             <button
               onClick={() => scrollTo("#connect")}
-              className="item connect-item"
+              className="link connect-link"
             >
               Connect
             </button>
@@ -45,8 +57,7 @@ export default function Footer() {
 
 const AAA = styled.figure`
   .container {
-    width: 1140px;
-    margin: 2rem auto;
+    margin: 0 auto;
   }
 
   .item-img {
@@ -59,8 +70,6 @@ const AAA = styled.figure`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 1rem;
-    margin-top: 3rem;
     padding: 2rem;
   }
 
@@ -68,23 +77,40 @@ const AAA = styled.figure`
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 1rem;
+    gap: 0.5rem;
   }
 
-  .item {
-    font-weight: 700;
-    color: #0a2844;
-    font-size: 1.2rem;
-    border: none;
-    background: none;
-    cursor: pointer;
-  }
-
-  .connect-item {
+  .link {
     padding: 0.5rem 2rem;
     border-radius: 0.5rem;
-    color: #fff;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    background: none;
+  }
 
-    background-color: #0a2844;
+  .connect-link {
+    color: var(--white);
+    background-color: var(--primary);
+  }
+
+  .nav__link {
+    color: var(--primary);
+    background: none;
+  }
+
+  .link:hover,
+  .link:active:not(:last-child) {
+    background-size: 230%;
+    color: var(--white);
+    background-image: linear-gradient(
+      120deg,
+      transparent 0%,
+      transparent 0%,
+      var(--primary) 0%
+    );
+    transition: all 0.8s;
   }
 `;
