@@ -74,8 +74,8 @@ const AAA = styled.figure`
   }
 
   .item-img {
-    width: 25px;
-    height: 25px;
+    width: 2rem;
+    height: 2rem;
   }
 
   .navbar {

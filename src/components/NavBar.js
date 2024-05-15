@@ -22,13 +22,13 @@ export default function Footer() {
               onClick={() => scrollTo("#about")}
               className="link nav__link"
             >
-              <span>About</span>
+              <p>About</p>
             </button>
             <button
               onClick={() => scrollTo("#portfolio")}
               className="link nav__link"
             >
-              <span>Portfolio</span>
+              <p>Portfolio</p>
             </button>
             <button
               onClick={() => scrollTo("#testimonials")}
@@ -61,8 +61,13 @@ const AAA = styled.figure`
   }
 
   .item-img {
-    width: 25px;
-    height: 25px;
+    width: 2rem;
+    height: 2rem;
+  }
+  @media (max-width: 56.25em) {
+    .item-img {
+      display: none;
+    }
   }
 
   .navbar {
@@ -72,6 +77,11 @@ const AAA = styled.figure`
     align-items: center;
     padding: 2rem;
   }
+  @media (max-width: 37.5em) {
+    .navbar {
+      justify-content: center;
+    }
+  }
 
   .nav-links {
     display: flex;
@@ -79,13 +89,17 @@ const AAA = styled.figure`
     align-items: center;
     gap: 0.5rem;
   }
+  @media (max-width: 37.5em) {
+    .nav-links {
+      flex-direction: column;
+    }
+  }
 
   .link {
     padding: 0.5rem 2rem;
     border-radius: 0.5rem;
     display: inline-block;
     font-weight: 700;
-    font-size: 1rem;
     cursor: pointer;
     border: none;
     background: none;

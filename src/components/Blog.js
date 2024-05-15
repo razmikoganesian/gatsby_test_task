@@ -57,6 +57,13 @@ const AAA = styled.figure`
     padding: 2rem;
     margin: 0 auto;
   }
+  @media (max-width: 37.5em) {
+    .container {
+      grid-template-rows: repeat(auto-fill, 30rem);
+      grid-template-columns: auto;
+      gap: 4rem;
+    }
+  }
 
   .item {
     display: grid;

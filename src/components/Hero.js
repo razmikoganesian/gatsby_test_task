@@ -46,12 +46,25 @@ const Container = styled.section`
     justify-items: center;
     margin: 0 auto;
   }
+  @media (max-width: 37.5em) {
+    .container {
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: auto;
+      gap: 4rem;
+    }
+  }
 
   .buttons {
     display: flex;
     flex-direction: row;
     gap: 1rem;
     margin-top: 2rem;
+  }
+  @media (max-width: 37.5em) {
+    .buttons {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   .btn {
@@ -90,11 +103,16 @@ const Container = styled.section`
     display: flex;
     flex-direction: column;
   }
+  @media (max-width: 37.5em) {
+    .article {
+      align-items: center;
+    }
+  }
 
   .example-img {
     border-radius: 1rem;
-    height: 400px;
-    width: 400px;
+    height: 25em;
+    width: 25em;
   }
 
   .text {
