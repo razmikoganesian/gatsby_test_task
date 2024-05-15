@@ -64,6 +64,11 @@ const Process = styled.figure`
     justify-content: center;
     margin: 3rem auto;
   }
+  @media (max-width: 37.5em) {
+    .container {
+      grid-template-columns: auto;
+    }
+  }
 
   .right {
     display: flex;

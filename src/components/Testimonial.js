@@ -117,32 +117,40 @@ const AAA = styled.div`
     margin-top: 2rem;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
     justify-content: center;
+    align-items: flex-start;
     gap: 2rem;
+  }
+  @media (max-width: 37.5em) {
+    .items {
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
   }
 
   .item {
-    background-color: #fff;
-    padding: 3rem 5rem;
     position: relative;
-    border-radius: 1rem;
-    width: 25vw;
+    display: flex;
+    flex-direction: column;
   }
 
   .img {
     border-radius: 50%;
-    width: 70px;
-    height: 70px;
+    width: 5rem;
+    height: 5rem;
     position: absolute;
-    transform: translate(75%, -150%);
+    transform: translate(200%, -50%);
   }
 
   .img-quote {
     border-radius: 50%;
-    width: 15px;
-    height: 15px;
+    width: 2rem;
+    height: 2rem;
     position: absolute;
-    transform: translate(500%, -100%);
+    transform: translate(100%, 10%);
     margin-bottom: 1rem;
   }
 
@@ -163,14 +171,14 @@ const AAA = styled.div`
   }
 
   .img-star {
-    width: 25px;
-    height: 25px;
+    width: 2rem;
+    height: 2rem;
     background-color: orange;
   }
 
   .last-star {
-    width: 25px;
-    height: 25px;
+    width: 2rem;
+    height: 2rem;
   }
 
   .header {
@@ -192,7 +200,14 @@ const AAA = styled.div`
   }
 
   .list {
-    text-align: center;
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    background-color: #fff;
+    padding: 3rem 2rem;
   }
 
   .aaa {
