@@ -3,9 +3,9 @@ import styled from "styled-components";
 import { StaticImage } from "gatsby-plugin-image";
 import scrollTo from "gatsby-plugin-smoothscroll";
 
-export default function Footer() {
+export function NavBar() {
   return (
-    <AAA>
+    <CustomStyle>
       <div className="container">
         <div className="navbar">
           <StaticImage
@@ -51,11 +51,11 @@ export default function Footer() {
           </div>
         </div>
       </div>
-    </AAA>
+    </CustomStyle>
   );
 }
 
-const AAA = styled.figure`
+const CustomStyle = styled.figure`
   .container {
     margin: 0 auto;
   }

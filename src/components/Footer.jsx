@@ -3,9 +3,9 @@ import styled from "styled-components";
 import { StaticImage } from "gatsby-plugin-image";
 import scrollTo from "gatsby-plugin-smoothscroll";
 
-export default function Footer() {
+export function Footer() {
   return (
-    <AAA id="connect">
+    <CustomStyle id="connect">
       <div className="container">
         <div className="text">
           <p>Contact me</p>
@@ -49,11 +49,11 @@ export default function Footer() {
         </div>
       </div>
       <div class="legal">Legal © Razmik Oganesian. All right reserved</div>
-    </AAA>
+    </CustomStyle>
   );
 }
 
-const AAA = styled.figure`
+const CustomStyle = styled.figure`
   .container {
     margin: 2rem auto;
     background-color: #d0ebff;

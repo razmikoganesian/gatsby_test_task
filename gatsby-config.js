@@ -33,5 +33,12 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: `gatsby-plugin-alias-imports`,
+      options: {
+        alias: {},
+        extensions: [],
+      },
+    },
   ],
 };

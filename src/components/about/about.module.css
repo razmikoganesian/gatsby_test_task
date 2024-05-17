@@ -1,0 +1,56 @@
+  .container {
+    text-align: center;
+    margin: 0 auto 3rem auto;
+  }
+
+  .header {
+    text-align: center;
+    font-weight: bold;
+    font-size: 3rem;
+    color: var(--primary);
+    margin-bottom: 3rem;
+  }
+  .experience {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5rem;
+    margin-top: 100px;
+  }
+
+  .jobDescription {
+    box-sizing: content-box;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .workplace {
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+
+  .skills {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .skill {
+    color: var(--white);
+    background-color: var(--primary);
+    padding: 0.3rem 0.3rem;
+    border-radius: 0.5rem;
+  }
+
+  .position {
+    margin-bottom: 1rem;
+    color: var(--primary);
+  }

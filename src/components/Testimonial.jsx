@@ -3,84 +3,56 @@ import React from "react";
 import styled from "styled-components";
 import { ReactComponent as Star } from "../images/star.svg";
 
-export default function Testimonial() {
+const data = [
+  {
+    name: "Hachatur",
+    feedback: "Razmik is nice",
+    email: "hach@gmail.com",
+  },
+  {
+    name: "Ashot",
+    feedback: "Razmik is awesome",
+    email: "ashot@gmail.com",
+  },
+  {
+    name: "Armen",
+    feedback: "He is good",
+    email: "armen@gmail.com",
+  },
+];
+
+export function Testimonial() {
   return (
-    <AAA>
+    <CustomStyle>
       <div className="container" id="testimonials">
         <div className="headline">
           <p className="text up">Reviews</p>
           <h1 className="header">Customer testimonials</h1>
         </div>
         <div className="items">
-          <figure className="item">
-            <StaticImage
-              src="../images/testimonial/person1.jpg"
-              alt="person1"
-              layout="constrained"
-              placeholder="tracedSVG"
-              as="section"
-              class="img"
-            />
-            <StaticImage
-              src="../images/quotes.svg"
-              alt="quote"
-              layout="constrained"
-              placeholder="tracedSVG"
-              as="section"
-              class="img-quote"
-            />
-            <div className="list">
-              <p>Razmik was quite good</p>
-              <p className="person">Markus Hovhannisyan</p>
-              <p>aaa@gmail.com</p>
-            </div>
-          </figure>
-          <figure className="item">
-            <StaticImage
-              src="../images/testimonial/person2.jpg"
-              alt="Person2"
-              layout="constrained"
-              placeholder="tracedSVG"
-              as="section"
-              class="img"
-            />
-            <StaticImage
-              src="../images/quotes.svg"
-              alt="quote"
-              layout="constrained"
-              placeholder="tracedSVG"
-              as="section"
-              class="img-quote"
-            />
-            <div className="list">
-              <p>He is a fan of Spain</p>
-              <p className="person">Armen Ashakyan</p>
-              <p>aaa@gmail.com</p>
-            </div>
-          </figure>
-          <figure className="item">
-            <StaticImage
-              src="../images/testimonial/person3.jpg"
-              alt="Person3"
-              layout="constrained"
-              placeholder="tracedSVG"
-              as="section"
-              class="img"
-            />
-            <StaticImage
-              src="../images/quotes.svg"
-              alt="quote"
-              layout="constrained"
-              placeholder="tracedSVG"
-              as="section"
-              class="img-quote"
-            />
-            <div className="list">
-              <p>He is good automation engineer</p>
-              <p className="person">Vazgen Manukyan</p>
-              <p>aaa@gmail.com</p>
-            </div>
-          </figure>
+          {data.map((item, index) => (
+            <figure className="item" key={index}>
+              <img
+                src={`../../testimonial/person${index + 1}.jpg`}
+                alt={`Person ${index + 1}`}
+                class="img"
+                layout="constrained"
+              ></img>
+              <StaticImage
+                src="../images/quotes.svg"
+                alt="quote"
+                layout="constrained"
+                placeholder="tracedSVG"
+                as="section"
+                class="img-quote"
+              />
+              <div className="list">
+                <p>{item.feedback}</p>
+                <p className="person">{item.name}</p>
+                <p>{item.email}</p>
+              </div>
+            </figure>
+          ))}
         </div>
         <div className="rating">
           <p className="person">Five stars</p>
@@ -101,11 +73,11 @@ export default function Testimonial() {
           </div>
         </div>
       </div>
-    </AAA>
+    </CustomStyle>
   );
 }
 
-const AAA = styled.div`
+const CustomStyle = styled.div`
   margin-top: 5rem;
   .container {
     margin: 5rem auto;

@@ -2,9 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import { StaticImage } from "gatsby-plugin-image";
 
-export default function Hero() {
+export function Hero() {
   return (
-    <Container>
+    <CustomStyle>
       <div className="container">
         <div>
           <div className="article">
@@ -33,11 +33,11 @@ export default function Hero() {
         </div>
       </div>
       <div className="underline"></div>
-    </Container>
+    </CustomStyle>
   );
 }
 
-const Container = styled.section`
+const CustomStyle = styled.section`
   .container {
     display: grid;
     grid-template-rows: auto;
