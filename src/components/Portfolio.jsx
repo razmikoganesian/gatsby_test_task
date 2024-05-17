@@ -2,9 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import { StaticImage } from "gatsby-plugin-image";
 
-export default function Portfolio() {
+export  function Portfolio() {
   return (
-    <Gallery>
+    <CustomStyle>
       <div className="container" id="portfolio">
         <p className="portfolio">Portfolio</p>
         <h2 className="recent-work">Recent work</h2>
@@ -76,11 +76,11 @@ export default function Portfolio() {
           />
         </div>
       </div>
-    </Gallery>
+    </CustomStyle>
   );
 }
 
-const Gallery = styled.figure`
+const CustomStyle = styled.figure`
   .container {
     margin: 3rem auto;
   }
@@ -97,11 +97,16 @@ const Gallery = styled.figure`
 
   .gallery {
     display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(3, 20vw);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 1.5rem;
     padding: 1.5rem;
     justify-content: center;
+  }
+  @media (max-width: 37.5em) {
+    .gallery {
+      grid-template-columns: repeat(2, minmax(16rem, 1fr));
+
+    }
   }
 
   .gallery__item {
@@ -110,45 +115,7 @@ const Gallery = styled.figure`
     object-fit: cover;
     display: block;
     border-radius: 1rem;
-  }
+    aspect-ratio: 1;
 
-  .gallery__item--1 {
-    grid-row: 1 / 2;
-    grid-column: 1 / 2;
-  }
-
-  .gallery__item--2 {
-    grid-row: 1 / 2;
-    grid-column: 2 / 3;
-  }
-
-  .gallery__item--3 {
-    grid-row: 1 / 2;
-    grid-column: 3 / 4;
-  }
-
-  .gallery__item--4 {
-    grid-row: 2 / 3;
-    grid-column: 1 / 2;
-  }
-
-  .gallery__item--5 {
-    grid-row: 2 / 3;
-    grid-column: 2 / 3;
-  }
-
-  .gallery__item--6 {
-    grid-row: 2 / 3;
-    grid-column: 3 / 4;
-  }
-
-  .gallery__item--7 {
-    grid-row: 3 / 4;
-    grid-column: 1 / 2;
-  }
-
-  .gallery__item--8 {
-    grid-row: 3 / 4;
-    grid-column: 2/ 3;
   }
 `;

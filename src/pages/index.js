@@ -1,18 +1,21 @@
 import * as React from "react";
-import NavBar from "../components/NavBar";
-import Hero from "../components/Hero";
-import About from "../components/About";
-import Portfolio from "../components/Portfolio";
 import styled from "styled-components";
-import Methodology from "../components/Methodology";
-import Testimonial from "../components/Testimonial";
-import Blog from "../components/Blog";
-import Footer from "../components/Footer";
 import "../css/main.css";
+
+import {
+  About,
+  Blog,
+  Footer,
+  Hero,
+  Methodology,
+  NavBar,
+  Portfolio,
+  Testimonial,
+} from "../components/Index";
 
 export default function Home() {
   return (
-    <Main>
+    <CustomStyle>
       <NavBar />
       <Hero />
       <About />
@@ -21,11 +24,11 @@ export default function Home() {
       <Testimonial />
       <Blog />
       <Footer />
-    </Main>
+    </CustomStyle>
   );
 }
 
-const Main = styled.div`
+const CustomStyle = styled.div`
   *,
   *::before,
   *::after {
